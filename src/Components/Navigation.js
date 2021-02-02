@@ -3,7 +3,7 @@ import { Image, Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import User from '../Screens/User';
-import System from '../Screens/System';
+import UserLogin from '../Screens/UserLogin';
 import Register from '../Screens/Register';
 import AdminUser from '../Screens/AdminUser';
 import Admin from '../Screens/Admin';
@@ -43,7 +43,7 @@ function Navigation() {
             // headerTitle: props => <Image style={{height: 70, width: 500, resizeMode: 'contain', marginLeft: -190}} source={{uri: "https://miro.medium.com/max/1838/1*KJACFKJ0GKtnhgR7OmlPFA.gif"}}></Image>
            }}
           name="User" component={User} />
-          <Stack.Screen name="System" component={System} options={{
+          <Stack.Screen name="UserLogin" component={UserLogin} options={{
             headerStyle: {
               backgroundColor: 'white',
             },

@@ -37,7 +37,7 @@ function Register(props) {
             </View>
             
             {/* <View style={styles.inputText}><TextInput placeholder="Blood group"></TextInput></View> */}
-            <View style={styles.btn}><TouchableOpacity activeOpacity={0.8} style={styles.btn1} onPress={()=> props.navigation.navigate("UserLogin")}>
+            <View style={styles.btn}><TouchableOpacity activeOpacity={0.8} style={styles.btn1} onPress={()=> props.navigation.navigate("User")}>
                 <Text style={styles.btnTxt}>Register</Text>
             </TouchableOpacity></View>
         </View>

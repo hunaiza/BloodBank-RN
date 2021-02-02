@@ -18,7 +18,7 @@ export default function Main(props) {
             <TextInput keyboardType="email-address" style={styles.input} placeholder = "Username"></TextInput>
             <TextInput style={styles.input} secureTextEntry={true} placeholder = "Password"></TextInput>
             {/* <Button style={styles.btn} title="Login" color="grey" onPress={() => alert("Login")} /> */}
-            <TouchableOpacity activeOpacity={0.8} style={styles.btn} onPress={()=> props.navigation.navigate("System")}>
+            <TouchableOpacity activeOpacity={0.8} style={styles.btn} onPress={()=> props.navigation.navigate("UserLogin")}>
                 <Text style={styles.btnTxt}>Login</Text>
             </TouchableOpacity>
             <Text style={styles.New}>New User? </Text>
