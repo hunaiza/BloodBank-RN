@@ -20,14 +20,17 @@ function Register(props) {
             <View style={styles.inputText1}><Text style={styles.inputBtn}>Blood Group:</Text>
             <Picker style={styles.pickerValue}
             selectedValue={selectedValue}
-            style={{ height: 50, width: 90 }}
+            style={{ height: 50, width: 100 }}
             onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
             >
             <Picker.Item label="A+" value="A+" />
             <Picker.Item label="A-" value="A-" />
             <Picker.Item label="B+" value="B+" />
             <Picker.Item label="B-" value="B-" />
-            <Picker.Item label="O" value="O" />
+            <Picker.Item label="AB+" value="AB+" />
+            <Picker.Item label="AB-" value="AB-" />
+            <Picker.Item label="O+" value="O+" />
+            <Picker.Item label="O-" value="O-" />
             </Picker>
             </View>
             <View style={styles.checkboxContainer}>

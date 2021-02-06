@@ -1,9 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image, TextInput, Button, TouchableOpacity, ScrollView } from 'react-native';
 
-
-
-
 export default function Main(props) {
     // const [Name, setName] = useState("Hunaiza Solanki");
     // const [Email, setEmail] = useState("huniisolanki10@gmail.com");

@@ -35,15 +35,21 @@ import BloodDonor from './BloodDonor';
 import RegisteredCustomer from './RegisteredCustomer';
 import SameBlood from './SameBlood';
 
-
-
 const Tab = createMaterialTopTabNavigator();
 
 export default function App() {
   return (
     <NavigationContainer independent={true}>
-      <Tab.Navigator>
-        <Tab.Screen name="Blood Donors" component={BloodDonor} />
+      <Tab.Navigator tabBarOptions={{
+      style: {
+        backgroundColor: 'white'
+      },
+      indicatorStyle: {
+        backgroundColor: 'red',
+        height: 3
+      }
+    }}>
+        <Tab.Screen name="Blood Donors" component={BloodDonor}/>
         <Tab.Screen name="Registered Users" component={RegisteredCustomer} />
         <Tab.Screen name="Same Blood Groups" component={SameBlood} />
       </Tab.Navigator>

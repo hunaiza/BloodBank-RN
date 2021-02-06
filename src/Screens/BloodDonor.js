@@ -6,7 +6,7 @@ export default function BloodDonor() {
         <ScrollView>
         <View>
             <View style={styles.Cart}>
-                <Text style={{color: 'grey'}}>Name: M.Usama Khan</Text>
+                <Text style={{color: 'grey'}}>Name: M.Asif Khan</Text>
                 <Text style={{color: 'grey'}}>Country: Pakistan</Text>
                 <Text style={{color: 'grey'}}>City: Karachi</Text>
                 <Text style={{color: 'grey'}}>Contact No:+92 33 1764 0604</Text>

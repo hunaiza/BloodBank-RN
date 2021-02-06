@@ -37,7 +37,7 @@
 
 
 import * as React from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, TouchableOpacity } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import SellBlood from './SellBlood';
@@ -52,7 +52,15 @@ const Tab = createMaterialTopTabNavigator();
 export default function App() {
   return (
     <NavigationContainer independent={true}>
-      <Tab.Navigator>
+      <Tab.Navigator tabBarOptions={{
+      style: {
+        backgroundColor: 'white'
+      },
+      indicatorStyle: {
+        backgroundColor: 'red',
+        height: 3
+      }
+    }}>
         <Tab.Screen name="Sell Blood" component={SellBlood} />
         <Tab.Screen name="Search Donor" component={SearchDonor} />
         <Tab.Screen name="About" component={About} />
